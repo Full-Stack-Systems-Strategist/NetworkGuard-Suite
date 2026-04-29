@@ -358,7 +358,7 @@ ipconfig /all
 route print
 ```
 
-### Issue: Honeypot module not found
+### Issue: Honeypot module missing
 
 **Solution**: This is non-critical; Network_Guard will continue without it
 - Place `arp_honeypot_bridge.py` in project root to enable integration
@@ -375,7 +375,7 @@ sc query rpcss
 netsh advfirewall firewall show rule name="BlockPort*"
 ```
 
-### Issue: ARP spoofing not detected
+### Issue: ARP spoofing missing
 
 **Solution**: Verify gateway configuration and network interface
 ```bash
